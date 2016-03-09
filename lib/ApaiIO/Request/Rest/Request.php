@@ -128,6 +128,17 @@ class Request implements RequestInterface
     /**
      * {@inheritdoc}
      */
+    public function getRequestString(OperationInterface $operation)
+    {
+        $preparedRequestParams = $this->prepareRequestParams($operation);
+        $queryString = $this->buildQueryString($preparedRequestParams);
+
+        return $queryString;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function perform(OperationInterface $operation)
     {
         $ch = curl_init();

@@ -52,6 +52,30 @@ class ApaiIO
         $this->configuration = $configuration;
     }
 
+     /**
+     * Returns the request string only
+     *
+     * @param OperationInterface     $operation     The operationobject
+     * @param ConfigurationInterface $configuration The configurationobject
+     *
+     * @return string
+     */
+
+    public function getRequestString(OperationInterface $operation, ConfigurationInterface $configuration = null)
+    {
+        $configuration = is_null($configuration) ? $this->configuration : $configuration;
+
+        if (true === is_null($configuration)) {
+            throw new \Exception('No configuration passed.');
+        }
+
+        $requestObject = RequestFactory::createRequest($configuration);
+
+        $response = $requestObject->getRequestString($operation);
+
+        return $response;
+    }
+
     /**
      * Runs the given operation
      *
