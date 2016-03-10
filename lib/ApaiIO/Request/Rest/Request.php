@@ -132,8 +132,9 @@ class Request implements RequestInterface
     {
         $preparedRequestParams = $this->prepareRequestParams($operation);
         $queryString = $this->buildQueryString($preparedRequestParams);
+        $fullqueryString = sprintf($this->requestScheme, $this->configuration->getCountry(), $queryString);
 
-        return $queryString;
+        return $fullqueryString;
     }
 
     /**
