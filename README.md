@@ -8,4 +8,4 @@ ApaiIO2 is a fork of ApaiIO with the following added features:
 </ul>
 
 Read more about Apai-IO here:
-https://github.com/finedesignz/apai-io2
+https://github.com/exeu/apai-io
