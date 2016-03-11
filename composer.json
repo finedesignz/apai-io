@@ -1,19 +1,14 @@
 {
-    "name": "exeu/apai-io",
+    "name": "finedesignz/apai-io2",
     "type": "library",
     "description": "Amazon Product Advertising PHP Library",
     "keywords": ["Amazon", "ECS", "Product Advertising", "SOAP", "REST", "Products"],
-    "homepage": "https://github.com/Exeu/apai-io",
+    "homepage": "https://github.com/finedesignz/apai-io",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Jan Eichhorn",
-            "email": "exeu65@googlemail.com",
-            "role": "Maintainer"
-        },
-        {
-            "name": "Dejan Spasic",
-            "email": "dejan.spasic@bitweise.biz",
+            "name": "Michael Smith",
+            "email": "articulatedesigns@gmail.com",
             "role": "Developer"
         }
     ],
